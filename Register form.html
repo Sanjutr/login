@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            #register-form{
+                background-color: bisque;
+                width: 400px;
+                padding: 24px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .label{
+                margin: 0;
+                margin-bottom: 4px;
+                margin-top: 12px;
+            }
+            .item{
+                width: 100%;
+            }
+            #check{
+                margin-bottom: 12px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body style="background-color: lightblue;">
+        <h1 style="text-align:center;">Signup</h1>
+        <form action="" id="register-form" method="post">
+            <div>
+             <p class="label">Full Name:</p>
+            <input class="item" type="text" name="name">
+            </div>
+            <div>
+            <p class="label">Email: </p>            
+            <input class="item" type="email" name="email">
+            </div>
+             <div>            
+            <p class="label">Password:</p>
+            <input class="item" type="password"  name="password">
+            </div>
+            <div>
+                <p class="label">Confirm Password:</p>
+                <input class="item" type="password"  name="confirm-pasword">
+            </div>
+            <div>
+                <p class="label">Gender:</p>
+                <input type="radio"  name="male" value="m">Male</input>
+                <input type="radio"  name="female" value="f">Female</input>
+                <input type="radio"  name="other" value="f">Other</input>
+                </div>
+                <div>
+                    <p class="label">Security Question:</p>
+                    <select class="item" name="Select the question">
+                        <option value="">What was you first pet's name?</option>
+                        <option value="">What was you first job?</option>
+                        <option value="">What is your favourite food?</option>
+                        </select>
+                    
+                </div>
+                <div>                  
+                    <textarea class="item"   name="answer" rows="6" cols="30"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="check" value="c">I agree to accept all the T&C</input>
+                </div>
+                <input type="submit" name="Sign in" value="Register"><br>
+                <a href="/Form.html">Already have an account?</a>
+
+        </form>
+    </body>
+</html>
